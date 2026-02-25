@@ -1,0 +1,16 @@
+# BEGIN WordPress
+
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+php_value memory_limit 1024M
+
+# END WordPress
+php_value error_reporting 2047
+php_value error_log ../httpd-error.log
+php_value log_errors_max_len 52428800

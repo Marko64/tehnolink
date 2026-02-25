@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 36, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/marko/OneDrive/Desktop/Konfigurator/woocommerce-products/src/app/products/%5Bid%5D/page.tsx"],"sourcesContent":["import { ProductDetailClient } from \"./ProductDetailClient\";\nimport fs from \"node:fs/promises\";\nimport path from \"node:path\";\nimport type { WooCommerceProduct } from \"@/types/woocommerce\";\n\nexport async function generateStaticParams() {\n  const filePath = path.join(process.cwd(), \"public\", \"products.json\");\n  const json = await fs.readFile(filePath, \"utf8\");\n  const products: WooCommerceProduct[] = JSON.parse(json);\n\n  return products.map((p) => ({ id: p.id.toString() }));\n}\n\ntype PageProps = {\n  params: { id: string };\n  searchParams: Record<string, string | string[] | undefined>;\n};\n\nexport default function ProductDetailPage({ params, searchParams }: PageProps) {\n  return <ProductDetailClient />;\n}\n\n"],"names":[],"mappings":";;;;;;;AAAA;AACA;AACA;;;;;AAGO,eAAe;IACpB,MAAM,WAAW,4HAAI,CAAC,IAAI,CAAC,QAAQ,GAAG,IAAI,UAAU;IACpD,MAAM,OAAO,MAAM,gJAAE,CAAC,QAAQ,CAAC,UAAU;IACzC,MAAM,WAAiC,KAAK,KAAK,CAAC;IAElD,OAAO,SAAS,GAAG,CAAC,CAAC,IAAM,CAAC;YAAE,IAAI,EAAE,EAAE,CAAC,QAAQ;QAAG,CAAC;AACrD;AAOe,SAAS,kBAAkB,EAAE,MAAM,EAAE,YAAY,EAAa;IAC3E,qBAAO,yQAAC,0MAAmB;;;;;AAC7B"}}]
+}

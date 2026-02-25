@@ -1,0 +1,182 @@
+module.exports = [
+"[project]/woocommerce-products/src/app/favicon.ico.mjs { IMAGE => \"[project]/woocommerce-products/src/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", ((__turbopack_context__) => {
+
+__turbopack_context__.n(__turbopack_context__.i("[project]/woocommerce-products/src/app/favicon.ico.mjs { IMAGE => \"[project]/woocommerce-products/src/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript)"));
+}),
+"[externals]/next/dist/shared/lib/no-fallback-error.external.js [external] (next/dist/shared/lib/no-fallback-error.external.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/shared/lib/no-fallback-error.external.js", () => require("next/dist/shared/lib/no-fallback-error.external.js"));
+
+module.exports = mod;
+}),
+"[project]/woocommerce-products/src/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", ((__turbopack_context__) => {
+
+__turbopack_context__.n(__turbopack_context__.i("[project]/woocommerce-products/src/app/layout.tsx [app-rsc] (ecmascript)"));
+}),
+"[project]/woocommerce-products/src/lib/filterQuery.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "filtersToQueryString",
+    ()=>filtersToQueryString,
+    "filtersToSearchParams",
+    ()=>filtersToSearchParams,
+    "searchParamsToFilters",
+    ()=>searchParamsToFilters
+]);
+function filtersToSearchParams(filters) {
+    const params = new URLSearchParams();
+    if (filters.excludedCategories && filters.excludedCategories.length > 0) {
+        params.set("excluded", filters.excludedCategories.join(","));
+    }
+    if (filters.search) params.set("search", filters.search);
+    if (filters.category) params.set("category", filters.category);
+    if (filters.minPrice !== undefined) params.set("minPrice", String(filters.minPrice));
+    if (filters.maxPrice !== undefined) params.set("maxPrice", String(filters.maxPrice));
+    if (filters.onSale) params.set("onSale", "true");
+    if (filters.inStock) params.set("inStock", "true");
+    if (filters.orderby) params.set("orderby", filters.orderby);
+    if (filters.gorivo && filters.gorivo.length > 0) params.set("gorivo", filters.gorivo.join(","));
+    if (filters.frekvencija && filters.frekvencija.length > 0) params.set("frekvencija", filters.frekvencija.join(","));
+    if (filters.faza && filters.faza.length > 0) params.set("faza", filters.faza.join(","));
+    if (filters.emisija && filters.emisija.length > 0) params.set("emisija", filters.emisija.join(","));
+    if (filters.minSnaga !== undefined) params.set("minSnaga", String(filters.minSnaga));
+    if (filters.maxSnaga !== undefined) params.set("maxSnaga", String(filters.maxSnaga));
+    return params;
+}
+function filtersToQueryString(filters) {
+    return filtersToSearchParams(filters).toString();
+}
+function searchParamsToFilters(searchParams) {
+    const parsedFilters = {};
+    const excluded = searchParams.get("excluded");
+    if (excluded) parsedFilters.excludedCategories = excluded.split(",").map((id)=>parseInt(id, 10)).filter((n)=>!Number.isNaN(n));
+    const search = searchParams.get("search");
+    if (search) parsedFilters.search = search;
+    const category = searchParams.get("category");
+    if (category) parsedFilters.category = category;
+    const minPrice = searchParams.get("minPrice");
+    if (minPrice) parsedFilters.minPrice = Number(minPrice);
+    const maxPrice = searchParams.get("maxPrice");
+    if (maxPrice) parsedFilters.maxPrice = Number(maxPrice);
+    const onSale = searchParams.get("onSale");
+    if (onSale === "true") parsedFilters.onSale = true;
+    const inStock = searchParams.get("inStock");
+    if (inStock === "true") parsedFilters.inStock = true;
+    const orderby = searchParams.get("orderby");
+    if (orderby) parsedFilters.orderby = orderby;
+    const gorivo = searchParams.get("gorivo");
+    if (gorivo) parsedFilters.gorivo = gorivo.split(",").filter(Boolean);
+    const frekvencija = searchParams.get("frekvencija");
+    if (frekvencija) parsedFilters.frekvencija = frekvencija.split(",").filter(Boolean);
+    const faza = searchParams.get("faza");
+    if (faza) parsedFilters.faza = faza.split(",").filter(Boolean);
+    const emisija = searchParams.get("emisija");
+    if (emisija) parsedFilters.emisija = emisija.split(",").filter(Boolean);
+    const minSnaga = searchParams.get("minSnaga");
+    if (minSnaga) parsedFilters.minSnaga = Number(minSnaga);
+    const maxSnaga = searchParams.get("maxSnaga");
+    if (maxSnaga) parsedFilters.maxSnaga = Number(maxSnaga);
+    return parsedFilters;
+}
+}),
+"[project]/woocommerce-products/src/app/products/[id]/ProductDetailClient.tsx [app-rsc] (client reference proxy) <module evaluation>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ProductDetailClient",
+    ()=>ProductDetailClient
+]);
+// This file is generated by next-core EcmascriptClientReferenceModule.
+var __TURBOPACK__imported__module__$5b$project$5d2f$woocommerce$2d$products$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/woocommerce-products/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server.js [app-rsc] (ecmascript)");
+;
+const ProductDetailClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$woocommerce$2d$products$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call ProductDetailClient() from the server but ProductDetailClient is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/woocommerce-products/src/app/products/[id]/ProductDetailClient.tsx <module evaluation>", "ProductDetailClient");
+}),
+"[project]/woocommerce-products/src/app/products/[id]/ProductDetailClient.tsx [app-rsc] (client reference proxy)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ProductDetailClient",
+    ()=>ProductDetailClient
+]);
+// This file is generated by next-core EcmascriptClientReferenceModule.
+var __TURBOPACK__imported__module__$5b$project$5d2f$woocommerce$2d$products$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/woocommerce-products/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server.js [app-rsc] (ecmascript)");
+;
+const ProductDetailClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$woocommerce$2d$products$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
+    throw new Error("Attempted to call ProductDetailClient() from the server but ProductDetailClient is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
+}, "[project]/woocommerce-products/src/app/products/[id]/ProductDetailClient.tsx", "ProductDetailClient");
+}),
+"[project]/woocommerce-products/src/app/products/[id]/ProductDetailClient.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+var __TURBOPACK__imported__module__$5b$project$5d2f$woocommerce$2d$products$2f$src$2f$app$2f$products$2f5b$id$5d2f$ProductDetailClient$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/woocommerce-products/src/app/products/[id]/ProductDetailClient.tsx [app-rsc] (client reference proxy) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$woocommerce$2d$products$2f$src$2f$app$2f$products$2f5b$id$5d2f$ProductDetailClient$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__ = __turbopack_context__.i("[project]/woocommerce-products/src/app/products/[id]/ProductDetailClient.tsx [app-rsc] (client reference proxy)");
+;
+__turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$woocommerce$2d$products$2f$src$2f$app$2f$products$2f5b$id$5d2f$ProductDetailClient$2e$tsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__);
+}),
+"[externals]/node:fs/promises [external] (node:fs/promises, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("node:fs/promises", () => require("node:fs/promises"));
+
+module.exports = mod;
+}),
+"[externals]/node:path [external] (node:path, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("node:path", () => require("node:path"));
+
+module.exports = mod;
+}),
+"[project]/woocommerce-products/src/app/products/[id]/page.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>ProductDetailPage,
+    "generateStaticParams",
+    ()=>generateStaticParams
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$woocommerce$2d$products$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/woocommerce-products/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$woocommerce$2d$products$2f$src$2f$lib$2f$filterQuery$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/woocommerce-products/src/lib/filterQuery.ts [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$woocommerce$2d$products$2f$src$2f$app$2f$products$2f5b$id$5d2f$ProductDetailClient$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/woocommerce-products/src/app/products/[id]/ProductDetailClient.tsx [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$externals$5d2f$node$3a$fs$2f$promises__$5b$external$5d$__$28$node$3a$fs$2f$promises$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/node:fs/promises [external] (node:fs/promises, cjs)");
+var __TURBOPACK__imported__module__$5b$externals$5d2f$node$3a$path__$5b$external$5d$__$28$node$3a$path$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/node:path [external] (node:path, cjs)");
+;
+;
+;
+;
+;
+async function generateStaticParams() {
+    const filePath = __TURBOPACK__imported__module__$5b$externals$5d2f$node$3a$path__$5b$external$5d$__$28$node$3a$path$2c$__cjs$29$__["default"].join(process.cwd(), "public", "products.json");
+    const json = await __TURBOPACK__imported__module__$5b$externals$5d2f$node$3a$fs$2f$promises__$5b$external$5d$__$28$node$3a$fs$2f$promises$2c$__cjs$29$__["default"].readFile(filePath, "utf8");
+    const products = JSON.parse(json);
+    return products.map((p)=>({
+            id: p.id.toString()
+        }));
+}
+function ProductDetailPage({ params, searchParams }) {
+    const spLike = {
+        get (name) {
+            const value = searchParams?.[name];
+            if (Array.isArray(value)) return value[0] ?? null;
+            return value ?? null;
+        }
+    };
+    const filters = (0, __TURBOPACK__imported__module__$5b$project$5d2f$woocommerce$2d$products$2f$src$2f$lib$2f$filterQuery$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["searchParamsToFilters"])(spLike);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$woocommerce$2d$products$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$woocommerce$2d$products$2f$src$2f$app$2f$products$2f5b$id$5d2f$ProductDetailClient$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ProductDetailClient"], {
+        filters: filters
+    }, void 0, false, {
+        fileName: "[project]/woocommerce-products/src/app/products/[id]/page.tsx",
+        lineNumber: 31,
+        columnNumber: 10
+    }, this);
+}
+}),
+"[project]/woocommerce-products/src/app/products/[id]/page.tsx [app-rsc] (ecmascript, Next.js Server Component)", ((__turbopack_context__) => {
+
+__turbopack_context__.n(__turbopack_context__.i("[project]/woocommerce-products/src/app/products/[id]/page.tsx [app-rsc] (ecmascript)"));
+}),
+];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__ee066c4a._.js.map
