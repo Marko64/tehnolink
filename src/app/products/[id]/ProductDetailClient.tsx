@@ -106,7 +106,7 @@ export function ProductDetailClient() {
     
     // Add centered logo
     try {
-      const logoUrl = typeof window !== 'undefined' ? `${window.location.origin}/tl-konfigurator/tehnolink-logo.png` : '/tl-konfigurator/tehnolink-logo.png';
+      const logoUrl = typeof window !== 'undefined' ? `${window.location.origin}/tehnolink-logo.png` : '/tehnolink-logo.png';
       const img = new Image();
       img.crossOrigin = 'Anonymous';
       await new Promise((resolve, reject) => {
@@ -276,7 +276,7 @@ export function ProductDetailClient() {
     
     // Add logo
     try {
-      const logoUrl = '/tl-konfigurator/tehnolink-logo.png';
+      const logoUrl = '/tehnolink-logo.png';
       const img = new Image();
       img.crossOrigin = 'Anonymous';
       await new Promise((resolve, reject) => {
@@ -459,7 +459,7 @@ export function ProductDetailClient() {
     
     // Add centered logo
     try {
-      const logoUrl = typeof window !== 'undefined' ? `${window.location.origin}/tl-konfigurator/tehnolink-logo.png` : '/tl-konfigurator/tehnolink-logo.png';
+      const logoUrl = typeof window !== 'undefined' ? `${window.location.origin}/tehnolink-logo.png` : '/tehnolink-logo.png';
       const img = new Image();
       img.crossOrigin = 'Anonymous';
       await new Promise((resolve, reject) => {
@@ -738,7 +738,7 @@ export function ProductDetailClient() {
               Back
             </Button>
             <img 
-              src="/tl-konfigurator/tehnolink-logo.png" 
+              src="/tehnolink-logo.png" 
               alt="Tehnolink Logo" 
               className="h-8 w-auto"
             />

@@ -33,7 +33,7 @@ export default function LoginPage() {
               Back
             </Button>
             <img 
-              src="/tl-konfigurator/tehnolink-logo.png" 
+              src="/tehnolink-logo.png" 
               alt="Tehnolink Logo" 
               className="h-8 w-auto"
             />

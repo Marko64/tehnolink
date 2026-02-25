@@ -1,10 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Ispravljeno: dodato "a" u konfigurator
-  basePath: '/tl-konfigurator', 
-  
-  // assetPrefix je obično nepotreban uz basePath, bolje ga ukloniti
+  // Removed basePath for Vercel deployment
   images: {
     unoptimized: true,
   },

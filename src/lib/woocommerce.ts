@@ -11,8 +11,8 @@ function getAuthHeaders(): HeadersInit {
 
 export async function fetchProducts(params?: Record<string, string | number | boolean>): Promise<WooCommerceProduct[]> {
   try {
-    // Load from static JSON file with correct basePath
-    const response = await fetch('/tl-konfigurator/products.json', {
+    // Load from static JSON file
+    const response = await fetch('/products.json', {
       headers: getAuthHeaders(),
     });
 
@@ -106,8 +106,8 @@ export async function fetchCategories(): Promise<{ id: number; name: string; slu
 
 export async function fetchProductById(id: number): Promise<WooCommerceProduct> {
   try {
-    // Load from static JSON file with correct basePath
-    const response = await fetch('/tl-konfigurator/products.json', {
+    // Load from static JSON file
+    const response = await fetch('/products.json', {
       headers: getAuthHeaders(),
     });
 
