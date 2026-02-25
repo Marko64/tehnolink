@@ -21,7 +21,7 @@ function ResultsPageContent() {
   const { products, loading, error } = useProducts(filters);
 
   return (
-    <div className="min-h-screen flex flex-col" style={{ background: 'linear-gradient(135deg, #f5f5f5 0%, #e5e5e5 100%)' }}>
+    <div className="min-h-screen flex flex-col" style={{ background: 'linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%)' }}>
       {/* Header */}
       <Navbar position="sticky" className="bg-white shadow-sm">
         <NavbarBrand>

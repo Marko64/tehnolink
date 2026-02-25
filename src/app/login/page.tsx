@@ -24,7 +24,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col" style={{ background: 'linear-gradient(135deg, #f5f5f5 0%, #e5e5e5 100%)' }}>
+    <div className="min-h-screen flex flex-col" style={{ background: 'linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%)' }}>
       {/* Black Header */}
       <div className="w-full bg-black">
         <div className="w-full py-4">

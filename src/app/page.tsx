@@ -46,7 +46,7 @@ export default function ProductsOverviewPage() {
   };
 
   return (
-    <div className="min-h-screen" style={{ background: 'linear-gradient(135deg, #f5f5f5 0%, #e5e5e5 100%)' }}>
+    <div className="min-h-screen" style={{ background: 'linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%)' }}>
       {/* Main Content - Sidebar + Grid Layout */}
       <main className="max-w-8xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-8">
@@ -58,7 +58,7 @@ export default function ProductsOverviewPage() {
                   <svg
                     width="164"
                     height="40"
-                    viewBox="0 57 164 34"
+                    viewBox="0 0 164 40"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
