@@ -46,7 +46,7 @@ export default function ProductsOverviewPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen" style={{ background: 'linear-gradient(135deg, #f5f5f5 0%, #e5e5e5 100%)' }}>
       {/* Main Content - Sidebar + Grid Layout */}
       <main className="max-w-8xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-8">

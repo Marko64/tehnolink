@@ -49,7 +49,7 @@ export default function ProductsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen" style={{ background: 'linear-gradient(135deg, #f5f5f5 0%, #e5e5e5 100%)' }}>
       {/* Header */}
       <Navbar position="sticky" className="bg-white shadow-sm">
         <NavbarBrand>
