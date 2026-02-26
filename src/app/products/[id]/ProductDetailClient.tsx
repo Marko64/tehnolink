@@ -738,7 +738,7 @@ export function ProductDetailClient() {
             <Button variant="flat" startContent={<ArrowLeft className="w-4 h-4" />} onClick={() => router.back()} className="text-white border-white/20 flex items-center gap-2 hover:text-[#DA0018]">
               Back
             </Button>
-            <Logo />
+            <Logo variant="navbar" />
             <div className="flex gap-3">
               <a 
                 href="https://tehnolink.net" 

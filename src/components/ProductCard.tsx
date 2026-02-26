@@ -107,7 +107,7 @@ export function ProductCard({ product, filters }: ProductCardProps) {
             <Button
               color="primary"
               variant="solid"
-              className="bg-[#fff] text-black border-2 border-[#333]font-semibold hover:bg-[#333] hover:text-white rounded-full px-6 py-2 h-10 text-base flex items-center justify-center"
+              className="bg-[#fff] text-black border-2 border-[#333] font-semibold hover:bg-[#333] hover:text-white rounded-full px-6 py-2 h-10 text-base flex items-center justify-center"
               size="sm"
               startContent={<Settings className="w-4 h-4" />}
             >

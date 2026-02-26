@@ -174,9 +174,9 @@ export function ProductFiltersComponent({ filters, onFiltersChange, categories }
               size="md"
               color="primary"
               classNames={{
-                thumb: "bg-[#da0018] rounded-full border-2 border-white shadow-md hover:bg-[#ff3344] transition-colors cursor-grab active:cursor-grabbing",
+                thumb: "bg-[#333] rounded-full border-2 border-white shadow-md hover:bg-[#ff3344] transition-colors cursor-grab active:cursor-grabbing",
                 trackWrapper: "h-2 cursor-grab",
-                track: "bg-gray-200 rounded-full h-2",
+                track: "bg-gray-[#eee] rounded-full h-2",
                 filler: "bg-transparent h-2",
               }}
             />
@@ -188,7 +188,7 @@ export function ProductFiltersComponent({ filters, onFiltersChange, categories }
         </div>
       </div>
 
-      <Divider className="bg-gray-500" />
+      <Divider className="bg-[#eee]" />
 
       {/* Fuel Type */}
       <div className="space-y-1">
@@ -208,7 +208,7 @@ export function ProductFiltersComponent({ filters, onFiltersChange, categories }
         </div>
       </div>
 
-      <Divider className="bg-gray-500" />
+      <Divider className="bg-[#eee]" />
 
       {/* Frequency */}
       <div className="space-y-1">
@@ -228,7 +228,7 @@ export function ProductFiltersComponent({ filters, onFiltersChange, categories }
         </div>
       </div>
 
-      <Divider className="bg-gray-500" />
+      <Divider className="bg-[#eee]" />
 
       {/* Phase */}
       <div className="space-y-1">
@@ -248,7 +248,7 @@ export function ProductFiltersComponent({ filters, onFiltersChange, categories }
         </div>
       </div>
 
-      <Divider className="bg-gray-500" />
+      <Divider className="bg-[#eee]" />
 
       {/* Emission */}
       <div className="space-y-1">
@@ -268,7 +268,7 @@ export function ProductFiltersComponent({ filters, onFiltersChange, categories }
         </div>
       </div>
 
-      <Divider className="bg-gray-500" />
+      <Divider className="bg-[#eee]" />
 
       {/* Reset Button */}
       <div className="flex justify-center">
@@ -276,7 +276,7 @@ export function ProductFiltersComponent({ filters, onFiltersChange, categories }
           size="sm"
           variant="flat" 
           onClick={clearFilters}
-          className="bg-gray-200 text-gray-800 rounded-[50px] px-4 py-2 h-10 focus:ring-0 focus:outline-none hover:bg-gray-300 flex items-center justify-center shadow-lg"
+          className="bg-gray-400 text-gray-800 rounded-[50px] px-4 py-2 h-10 focus:ring-0 focus:outline-none hover:bg-gray-300 flex items-center justify-center shadow-lg"
           startContent={<RefreshCw className="w-4 h-4" />}
         >
           Reset Filters

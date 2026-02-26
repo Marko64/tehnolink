@@ -83,8 +83,8 @@ html, body {
     background: linear-gradient(
       to right,
       #f3f4f6 var(--range-start),
-      #da0018 var(--range-start),
-      #da0018 var(--range-end),
+      #666 var(--range-start),
+      #666 var(--range-end),
       #f3f4f6 var(--range-end)
     );
   }
@@ -92,5 +92,22 @@ html, body {
   .custom-power-slider [data-slot="thumb"] {
     background-color: #da0018 !important;
     border: 2px solid #da0018 !important;
+  }
+
+  /* Global divider styling */
+  [data-slot="divider"] {
+    background-color: #eee !important;
+  }
+
+  /* Global configure button styling - using Tailwind classes instead */
+  .configure-button {
+    background-color: #fff !important;
+    color: black !important;
+    border: 2px solid #333 !important;
+  }
+
+  .configure-button:hover {
+    background-color: #333 !important;
+    color: white !important;
   }
 }
