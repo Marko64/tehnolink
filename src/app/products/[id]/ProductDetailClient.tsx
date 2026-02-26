@@ -7,6 +7,7 @@ import { ArrowLeft, Printer, FileText, Download, Save, ArrowRight, CheckCircle, 
 import jsPDF from 'jspdf';
 import type { WooCommerceProduct } from "@/types/woocommerce";
 import { fetchProductById } from "@/lib/woocommerce";
+import { Logo } from "@/components/Logo";
 
 export function ProductDetailClient() {
   const router = useRouter();
@@ -737,11 +738,7 @@ export function ProductDetailClient() {
             <Button variant="flat" startContent={<ArrowLeft className="w-4 h-4" />} onClick={() => router.back()} className="text-white border-white/20 flex items-center gap-2 hover:text-[#DA0018]">
               Back
             </Button>
-            <img 
-              src="/tehnolink-logo.png" 
-              alt="Tehnolink Logo" 
-              className="h-8 w-auto"
-            />
+            <Logo />
             <div className="flex gap-3">
               <a 
                 href="https://tehnolink.net" 
