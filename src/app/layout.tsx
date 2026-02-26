@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import { CACHE_VERSION } from "@/lib/version";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "WooCommerce Products",
   description: "Browse and filter WooCommerce products",
+  other: {
+    version: CACHE_VERSION,
+  },
 };
 
 export default function RootLayout({

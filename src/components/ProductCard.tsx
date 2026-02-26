@@ -83,7 +83,7 @@ export function ProductCard({ product, filters }: ProductCardProps) {
 
   return (
     <Card
-      className="w-full h-full group hover:shadow-2xl transition-all duration-300 border-0 rounded-xl bg-white overflow-hidden min-h-[160px] relative"
+      className="w-full h-full product-card min-h-[160px] relative"
     >
       {/* Engine Image - Top Right Corner */}
       {getEngineImage(product) && (

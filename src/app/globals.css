@@ -12,6 +12,13 @@
 /* Force light theme by overriding NextUI variables */
 :root, [data-theme="light"], .light {
   --nextui-background: 0 0% 100%;
+  --nextui-foreground: 222.2 84% 4.9%;
+  --nextui-primary: 349 100% 98%;
+  --nextui-primary-foreground: 210 20% 98%;
+  --nextui-secondary: 210 40% 96%;
+  --nextui-secondary-foreground: 222.2 84% 4.9%;
+  --nextui-muted: 210 40% 96%;
+  --nextui-muted-foreground: 215.4 16.3% 46.9%;
   color-scheme: light;
 }
 
@@ -76,9 +83,14 @@ html, body {
     background: linear-gradient(
       to right,
       #f3f4f6 var(--range-start),
-      #af9c9c var(--range-start),
-      #dc7c7c var(--range-end),
+      #da0018 var(--range-start),
+      #da0018 var(--range-end),
       #f3f4f6 var(--range-end)
     );
+  }
+
+  .custom-power-slider [data-slot="thumb"] {
+    background-color: #da0018 !important;
+    border: 2px solid #da0018 !important;
   }
 }
